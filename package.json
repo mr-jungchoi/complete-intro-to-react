@@ -10,7 +10,7 @@
     "update-test": "npm run test -- -u",
     "build": "webpack",
     "dev": "webpack-dev-server",
-    "lint": "eslint js/**/*.js server.js",
+    "lint": "standard",
     "watch": "webpack --watch"
   },
   "dependencies": {
