@@ -1,17 +1,10 @@
-var div = React.DOM.div;
-var h1 = React.DOM.h1;
+import React from 'react'
+import ReactDOM from 'react-dom'
+import MyTitle from './MyTitle'
 
-var MyTitle = React.createClass({
-  render: function () {
-    return (
-      div(null,
-        h1({style: {color: this.props.color}}, this.props.title)
-      )
-    );
-  }
-});
+var div = React.DOM.div
 
-var MyTitleFactory = React.createFactory(MyTitle);
+var MyTitleFactory = React.createFactory(MyTitle)
 
 var MyFirstComponent = React.createClass({
   render: function () {
@@ -22,8 +15,8 @@ var MyFirstComponent = React.createClass({
         MyTitleFactory({ title: 'why are there so many titles', color: 'tomato'}),
         MyTitleFactory({ title: 'this is the last one', color: 'peru'})
       )
-    );
+    )
   }
-});
+})
 
-ReactDOM.render(React.createElement(MyFirstComponent), document.getElementById('app'));
+ReactDOM.render(React.createElement(MyFirstComponent), document.getElementById('app'))
