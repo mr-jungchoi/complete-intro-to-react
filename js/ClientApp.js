@@ -10,6 +10,7 @@ const App = React.createClass({
     return (
       <HashRouter>
         <div className='app'>
+          {/* this is a comment */}
           <Match exactly pattern='/' component={Landing} />
         </div>
       </HashRouter>
